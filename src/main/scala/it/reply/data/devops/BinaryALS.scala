@@ -14,6 +14,7 @@ case class BinaryALS() {
   var sc : SparkContext = null
 
   var model : MatrixFactorizationModel = null
+  var test : String = null
 
   def initSpark(spark : SparkSession) : BinaryALS = {
     this.spark = spark
